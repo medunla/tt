@@ -1,0 +1,89 @@
+.story-marketing-card {
+    display: flex;
+    width: 338px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.story-marketing-card-image {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.story-marketing-card-image::before,
+.story-marketing-card-image::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.story-marketing-card-image::before {
+    z-index: 2;
+    border-top-right-radius: 8px;
+}
+
+.story-marketing-card-image::after {
+    z-index: 3;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.story-marketing-card.--hotel .story-marketing-card-image::after {
+    background-image: url('./images/icons/hotel-color.svg');
+}
+
+.story-marketing-card.--flight .story-marketing-card-image::after {
+    background-image: url('./images/icons/flight-color.svg');
+}
+
+.story-marketing-card.--activity .story-marketing-card-image::after {
+    background-image: url('./images/icons/ferris-wheel-color.svg');
+}
+
+.story-marketing-card.--other-hotels .story-marketing-card-image,
+.story-marketing-card.--other-flights .story-marketing-card-image,
+.story-marketing-card.--other-activities .story-marketing-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-marketing-card.--other-hotels .story-marketing-card-image,
+.story-marketing-card.--hotel .story-marketing-card-image::before {
+    background-color: #FEE9E5;
+}
+
+.story-marketing-card.--other-flights .story-marketing-card-image,
+.story-marketing-card.--flight .story-marketing-card-image::before {
+    background-color: #F2EBFC;
+}
+
+.story-marketing-card.--other-activities .story-marketing-card-image,
+.story-marketing-card.--activity .story-marketing-card-image::before {
+    background-color: #F3EFD8;
+}
+
+.story-marketing-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 258px;
+    gap: 4px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+a:link.story-marketing-card,
+a:visited.story-marketing-card,
+a:hover.story-marketing-card,
+a:active.story-marketing-card {
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.story-view-count {
+    top: 19px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: #FFF;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 4px;
+}
+
+.story-view-count::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url('./images/icons/eye.svg');
+    background-size: 22px 22px;
+    background-position: center center;
+}

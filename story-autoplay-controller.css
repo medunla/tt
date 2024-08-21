@@ -1,0 +1,15 @@
+.story-autoplay-controller {
+    top: 19px;
+    right: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+[data-is-paused="false"] .story-autoplay-controller-resume-button,
+[data-is-paused="true"] .story-autoplay-controller-pause-button {
+    display: none;
+}

@@ -1,0 +1,21 @@
+.story-marketing-card-mini {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.48);
+    overflow: hidden;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+}
+
+a:link.story-marketing-card-mini,
+a:visited.story-marketing-card-mini,
+a:hover.story-marketing-card-mini,
+a:active.story-marketing-card-mini {
+    color: #fff;
+    text-decoration: none;
+}

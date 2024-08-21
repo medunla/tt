@@ -1,0 +1,26 @@
+.story-badge {
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    background-color: #24262C;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFF;
+}
+
+.story-badge.--outline {
+    background-color: transparent;
+    border: 1px solid #C1CBE0;
+    color: #EDF0F9;
+}
+
+.story-badge.--location::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url('./images/icons/pin-location.svg');
+    background-size: 14px 14px;
+    background-position: center center;
+}

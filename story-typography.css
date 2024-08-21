@@ -1,0 +1,62 @@
+body, .body-2, .body-2-strong {
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, .heading-3 {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .heading-3, .body-2-strong, .caption-1-strong {
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.heading-3 {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.body-2,
+.body-2-strong {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.caption-1,
+.caption-1-strong {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.text-base-inverted-subtle {
+    color: #EDF0F9;
+}
+
+[data-line-clamp],
+.line-clamp-2,
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-1, [data-line-clamp="1"] {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.line-clamp-2, [data-line-clamp="2"] {
+    -webkit-line-clamp: 2;
+}
+
+.line-clamp-3, [data-line-clamp="3"] {
+    -webkit-line-clamp: 3;
+}

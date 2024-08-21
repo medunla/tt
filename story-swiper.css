@@ -1,0 +1,70 @@
+.story-swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+}
+
+.story-slide {
+    position: relative;
+}
+
+.story-slide-fake {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.story-pagination {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    opacity: 1;
+}
+
+[data-is-active-detail="true"] .story-pagination {
+    opacity: 0.2;
+}
+
+.story-pagination-item {
+    width: 100%;
+    height: 3px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.story-pagination-item > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.story-pagination-item:last-child > span {
+    width: 0% !important;
+}
+
+.story-button-next, .story-button-prev {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 3;
+}
+
+.story-button-prev {
+    width: 30%;
+    left: 0;
+}
+
+.story-button-next {
+    width: 70%;
+    right: 0;
+}

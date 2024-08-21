@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./story-typography.css" />
+        <link rel="stylesheet" href="./story-swiper.css" />
+        <link rel="stylesheet" href="./story-itinerary-page.css" />
+        <link rel="stylesheet" href="./story-navigation.css" />
+        <link rel="stylesheet" href="./story-autoplay-controller.css" />
+        <link rel="stylesheet" href="./story-content.css" />
+        <link rel="stylesheet" href="./story-marketing-card.css" />
+        <link rel="stylesheet" href="./story-marketing-card-mini.css" />
+        <link rel="stylesheet" href="./story-badge.css" />
+        <link rel="stylesheet" href="./story-view-count.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Vite App</title>
+    </head>
+    <body>
+        <div class="story-page text-base-inverted" data-is-active-detail="false" data-is-paused="false">
+            <div class="story-page-container">
+                <!-- .story-page-navigation -->
+                <div class="story-page-navigation">
+                    <div class="story-page-navigation-left">
+                        <img src="./images/icons/arrow-left.svg" alt="Back" width="20" height="20" class="story-page-navigation-back">
+                    </div>
+                    <div class="story-page-navigation-center heading-3">Travel tips</div>
+                    <div class="story-page-navigation-right">
+                        <img src="./images/icons/close.svg" alt="Close" width="20" height="20" class="story-page-navigation-close-detail">
+                    </div>
+                </div>
+                <!-- end .story-page-navigation -->
+
+                <!-- .story-swiper -->
+                <div class="swiper story-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- .story-slide -->
+                        <div class="swiper-slide story-slide" data-slide-index="0" data-is-slide-active-detail="false">
+                            <div class="story-content-container">
+                                <!-- .story-image-container -->
+                                <div class="story-image-container"><img src="./images/1.png" alt="Image 1" class="story-image" width="375" height="734"></div>
+                                <!-- end .story-image-container -->
+
+                                <!-- .story-view-count -->
+                                <div class="story-view-count story-content-floating-element"><span>1K</span></div>
+                                <!-- end .story-view-count -->
+
+                                <!-- .story-autoplay-controller -->
+                                <div class="story-autoplay-controller story-content-floating-element">
+                                    <div class="story-autoplay-controller-pause-button"><img src="./images/icons/pause.svg" alt="Pause" width="24" height="24" /></div>
+                                    <div class="story-autoplay-controller-resume-button"><img src="./images/icons/play.svg" alt="Resume" width="24" height="24" /></div>
+                                </div>
+                                <!-- end .story-autoplay-controller -->
+
+                                <!-- .story-detail-container -->
+                                <div class="story-detail-container">
+                                    <!-- story-detail-summary-button -->
+                                    <div class="story-detail-summary-button">
+                                        <img src="./images/icons/pin-route.svg" alt="Pin route" width="16" height="16">
+                                        <span class="body-2-strong">Summary</span>
+                                    </div>
+                                    <!-- end .story-detail-summary-button -->
+
+                                    <!-- .story-detail-types -->
+                                    <div class="story-detail-types">
+                                        <div class="story-badge --location"><span>Hanoi, Vietnam 🇻🇳</span></div>
+                                        <div class="story-badge"><span> $ 250 - 500</span></div>
+                                        <div class="story-badge"><span>5 Days</span></div>
+                                        <div class="story-badge"><span>Solo</span></div>
+                                        <div class="story-badge"><span>Adventure</span></div>
+                                    </div>
+
+                                    <!-- .story-detail-author -->
+                                    <div class="story-detail-author">
+                                        <div class="story-detail-author-avatar">
+                                        <a href="#" title="@kanoksai" target="_self"><img src="./images/author.jpg" alt="@kanoksai" width="24" height="24" /></a>
+                                        </div>
+                                        <a href="#" title="@kanoksai" target="_self" class="body-2-strong story-detail-author-avatar-name">@kanoksai</a>
+                                        <div class="story-badge --outline"><span>Travel expert L-1</span></div>
+                                    </div>
+                                    <!-- end .story-detail-author -->
+
+                                    <!-- .story-detail-content-container -->
+                                    <div class="story-detail-content-container">
+                                        <h5 class="body-2-strong line-clamp-2">5 Days In and Around Hanoi, Vietnam</h5>
+                                        <div class="story-detail-description caption-1 text-base-inverted-subtle" data-line-clamp="3">
+                                            A 5 days trip to Honoi, Vietnam after saw a TV commercial in Manila. Find out what I did. It may excite you as well. From fun to peace, everything’s there.
+                                        </div>
+                                    </div>
+                                    <!-- end .story-detail-content-container -->
+
+                                    <!-- .story-marketing-cards -->
+                                    <div class="story-marketing-cards">
+                                        <div class="swiper story-marketing-cards-inner">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" class="story-marketing-card-mini">
+                                                        <img src="./images/icons/hotel.svg" alt="Hotel" width="24" height="24" />
+                                                        <span>Hotels in this location</span>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" class="story-marketing-card-mini">
+                                                        <img src="./images/icons/flight.svg" alt="Flight" width="24" height="24" />
+                                                        <span>Flight in this location</span>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" class="story-marketing-card-mini">
+                                                        <img src="./images/icons/ferris-wheel.svg" alt="Activity" width="24" height="24" />
+                                                        <span>Activities in this location</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end .story-marketing-cards -->
+
+                                </div>
+                                <!-- end .story-detail-container -->
+                            </div>
+                            <div class="story-button-next"></div>
+                            <div class="story-button-prev"></div>
+                        </div>
+                        <!-- end .story-slide -->
+
+                        <!-- .story-slide -->
+                        <div class="swiper-slide story-slide" data-slide-index="1" data-is-slide-active-detail="false">
+                            <div class="story-content-container">
+                                <!-- .story-image-container -->
+                                <div class="story-image-container"><img src="./images/2.png" alt="Image 3" class="story-image" width="375" height="734"></div>
+                                <!-- end .story-image-container -->
+
+                                <!-- .story-view-count -->
+                                <div class="story-view-count story-content-floating-element"><span>1K</span></div>
+                                <!-- end .story-view-count -->
+
+                                <!-- .story-autoplay-controller -->
+                                <div class="story-autoplay-controller story-content-floating-element">
+                                    <div class="story-autoplay-controller-pause-button"><img src="./images/icons/pause.svg" alt="Pause" width="24" height="24" /></div>
+                                    <div class="story-autoplay-controller-resume-button"><img src="./images/icons/play.svg" alt="Resume" width="24" height="24" /></div>
+                                </div>
+                                <!-- end .story-autoplay-controller -->
+
+                                <!-- .story-detail-container -->
+                                <div class="story-detail-container">
+                                    <!-- story-detail-summary-button -->
+                                    <div class="story-detail-summary-button hide-when-is-slide-active-detail-true">
+                                        <img src="./images/icons/pin-route.svg" alt="Pin route" width="16" height="16">
+                                        <span class="body-2-strong">Summary</span>
+                                    </div>
+                                    <!-- end .story-detail-summary-button -->
+
+                                    <!-- .story-detail-author -->
+                                    <div class="story-detail-author">
+                                        <div class="story-detail-author-avatar">
+                                        <a href="#" title="@kanoksai" target="_self"><img src="./images/author.jpg" alt="@kanoksai" width="24" height="24" /></a>
+                                        </div>
+                                        <a href="#" title="@kanoksai" target="_self" class="body-2-strong story-detail-author-avatar-name">@kanoksai</a>
+                                        <div class="story-badge --outline"><span>Travel expert L-1</span></div>
+                                    </div>
+                                    <!-- end .story-detail-author -->
+
+                                    <!-- .story-detail-content-container -->
+                                    <div class="story-detail-content-container">
+                                        <h5 class="story-detail-title body-2-strong" data-line-clamp="2">Day 1: Hanoi Old Quarter</h5>
+                                        <div class="story-detail-description caption-1 text-base-inverted-subtle" data-line-clamp="2">
+                                            <p>8:00am: Arrived in Noi Bai International Airport. I bought a Viettel SIM card from the airport. The Grab ride from the airport to our hotel in Hanoi Old Quarter was about one hour.</p>
+                                            <p>9:30am: Checked into <a href="#" target="_self" title="Hanoi Fiesta Grand Hotel and Spa">Hanoi Fiesta Grand Hotel and Spa</a>. I booked via Agoda. Tip: There is another hotel named Hanoi Fiesta Hotel and Spa (without the “grand”) in Hanoi, and our driver ended up taking us to that wrong one. When you look at the hotel reviews, it’s a common mishap. Make sure it’s the correct hotel before getting off.</p>
+                                            <p>Brunch at Pho Thin, one of the renowned family-run Phở restaurants in Hanoi.</p>
+                                            <p> I had my first egg coffee at Café Giang, a family-run café in the Old Quarter. They’ve been using the same traditional egg coffee recipe since 1946.</p>
+                                            <p>Explored the Old Quarter and Hoan Kiem Lake area on foot.</p>
+                                            <p>Souvenir shopping at Dong Xuan Market, a three-story building in Hoan Kiem.</p>
+                                            <p>Shopping and dinner at the Trang Tien Plaza area. This luxury shopping complex sells authentic designer goods and is surrounded by modern restaurants and cafés.</p>
+                                        </div>
+                                        <div class="caption-1-strong">
+                                            <span class="story-detail-expand-detail">Read more</span>
+                                            <span class="story-detail-collapse-detail">Hide</span>
+                                        </div>
+                                    </div>
+                                    <!-- end .story-detail-content-container -->
+
+                                    <!-- .story-detail-types -->
+                                    <div class="story-detail-types hide-when-is-slide-active-detail-false">
+                                        <div class="story-badge --location"><span>Hanoi, Vietnam 🇻🇳</span></div>
+                                        <div class="story-badge"><span> $ 250 - 500</span></div>
+                                        <div class="story-badge"><span>5 Days</span></div>
+                                        <div class="story-badge"><span>Solo</span></div>
+                                        <div class="story-badge"><span>Adventure</span></div>
+                                    </div>
+
+                                    <!-- .story-marketing-cards -->
+                                    <div class="story-marketing-cards">
+                                        <div class="swiper story-marketing-cards-inner">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Hanoi Fiesta Grand Hotel and Spa" class="story-marketing-card --hotel">
+                                                        <div class="story-marketing-card-image"><img src="./images/marketing-card.png" alt="Hanoi Fiesta Grand Hotel and Spa" width="80" height="80"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Hanoi Fiesta Grand Hotel and Spa Hanoi Fiesta Grand Hotel and Spa</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $90.00 / night</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Other hotels in this location" class="story-marketing-card --other-hotels">
+                                                        <div class="story-marketing-card-image"><img src="./images/icons/hotel-color.svg" alt="Hotel" width="24" height="24"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Other hotels in this location</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $80.00 / night</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Flight from Hanoi to Manila" class="story-marketing-card --flight">
+                                                        <div class="story-marketing-card-image"><img src="./images/marketing-card.png" alt="Flight from Hanoi to Manila" width="80" height="80"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Flight from Hanoi to Manila</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $190.00 / person</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Other flights" class="story-marketing-card --other-flights">
+                                                        <div class="story-marketing-card-image"><img src="./images/icons/flight-color.svg" alt="Flight" width="24" height="24"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Other flights</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $40.00 / person</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Ninh Binh Day Trip: Hoa Lu-Tran" class="story-marketing-card --activity">
+                                                        <div class="story-marketing-card-image"><img src="./images/marketing-card.png" alt="Ninh Binh Day Trip: Hoa Lu-Tran" width="80" height="80"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Ninh Binh Day Trip: Hoa Lu-Tran</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $90.00 / person</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Other activities in this location" class="story-marketing-card --other-activities">
+                                                        <div class="story-marketing-card-image"><img src="./images/icons/ferris-wheel-color.svg" alt="Activities" width="24" height="24"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Other activities in this location</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $40.00 / night</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end .story-marketing-cards -->
+
+                                </div>
+                                <!-- end .story-detail-container -->
+                            </div>
+                            <div class="story-button-next"></div>
+                            <div class="story-button-prev"></div>
+                        </div>
+                        <!-- end .story-slide -->
+
+                        <!-- .story-slide -->
+                        <div class="swiper-slide story-slide" data-slide-index="2" data-is-slide-active-detail="false">
+                            <div class="story-content-container">
+                                <!-- .story-image-container -->
+                                <div class="story-image-container"><img src="./images/3.png" alt="Image 3" class="story-image" width="375" height="734"></div>
+                                <!-- end .story-image-container -->
+
+                                <!-- .story-view-count -->
+                                <div class="story-view-count story-content-floating-element"><span>1K</span></div>
+                                <!-- end .story-view-count -->
+
+                                <!-- .story-autoplay-controller -->
+                                <div class="story-autoplay-controller story-content-floating-element">
+                                    <div class="story-autoplay-controller-pause-button"><img src="./images/icons/pause.svg" alt="Pause" width="24" height="24" /></div>
+                                    <div class="story-autoplay-controller-resume-button"><img src="./images/icons/play.svg" alt="Resume" width="24" height="24" /></div>
+                                </div>
+                                <!-- end .story-autoplay-controller -->
+
+                                <!-- .story-detail-container -->
+                                <div class="story-detail-container">
+                                    <!-- story-detail-summary-button -->
+                                    <div class="story-detail-summary-button hide-when-is-slide-active-detail-true">
+                                        <img src="./images/icons/pin-route.svg" alt="Pin route" width="16" height="16">
+                                        <span class="body-2-strong">Summary</span>
+                                    </div>
+                                    <!-- end .story-detail-summary-button -->
+
+                                    <!-- .story-detail-author -->
+                                    <div class="story-detail-author">
+                                        <div class="story-detail-author-avatar">
+                                        <a href="#" title="@kanoksai" target="_self"><img src="./images/author.jpg" alt="@kanoksai" width="24" height="24" /></a>
+                                        </div>
+                                        <a href="#" title="@kanoksai" target="_self" class="body-2-strong story-detail-author-avatar-name">@kanoksai</a>
+                                        <div class="story-badge --outline"><span>Travel expert L-1</span></div>
+                                    </div>
+                                    <!-- end .story-detail-author -->
+
+                                    <!-- .story-detail-content-container -->
+                                    <div class="story-detail-content-container">
+                                        <h5 class="story-detail-title body-2-strong" data-line-clamp="2">Day 2: Ha Long Bay</h5>
+                                        <div class="story-detail-description caption-1 text-base-inverted-subtle" data-line-clamp="2">
+                                            <p>Some travelers will tell you that to fully enjoy Ha Long Bay, you’d have to book at least an overnight trip, where you’ll stay the night in a mini cruise ship. We didn’t have enough time for that, so we booked a day trip via Agoda.</p>
+                                            <p>Out of the five routes, we chose route #2, because route #1 seemed like the overpopulated bestseller, while routes 3-5 were for those who’ve already done the beginner routes. Our ticket was ₱2,800 per person, and it covered the following:
+                                            1. Round-trip bus transfer to and from our hotel2. Stopover at Legend Pearl, a pearl farm and jewellery store at Ngoc Trai Bien before docking our boat in Tuan Chau Harbor. My family loved this place, but the backpackers in our bus were unhappy. I get them. When I’m backpacking, I hate hard-sell stopovers, too (i.e. the ginseng and amethyst stores in Seoul day tours). But in this trip, I happily purchased pearls with my donya mother.
+                                            3. Buffet lunch in the boat4. Sung Sot Cave5. Ti Top Island6. Kayaking and rafting at Luon Cave7. Sunset party with drinks and snacks</p>
+                                            <p>The entire trip lasted from 8am-9pm. When we arrived back in Hanoi, we still had the energy to do more:
+                                            • Shopping at Cao Go Street
+                                            • Dinner at Long Vi Dung, one of the side-street eats in the Old Quarter
+                                            • I capped the night with a massage at the spa below our hotel.</p>
+                                        </div>
+                                        <div class="caption-1-strong">
+                                            <span class="story-detail-expand-detail">Read more</span>
+                                            <span class="story-detail-collapse-detail">Hide</span>
+                                        </div>
+                                    </div>
+                                    <!-- end .story-detail-content-container -->
+
+                                    <!-- .story-detail-types -->
+                                    <div class="story-detail-types hide-when-is-slide-active-detail-false">
+                                        <div class="story-badge --location"><span>Hanoi, Vietnam 🇻🇳</span></div>
+                                        <div class="story-badge"><span> $ 250 - 500</span></div>
+                                        <div class="story-badge"><span>5 Days</span></div>
+                                        <div class="story-badge"><span>Solo</span></div>
+                                        <div class="story-badge"><span>Adventure</span></div>
+                                    </div>
+
+                                    <!-- .story-marketing-cards -->
+                                    <div class="story-marketing-cards">
+                                        <div class="swiper story-marketing-cards-inner">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Hanoi Fiesta Grand Hotel and Spa" class="story-marketing-card --hotel">
+                                                        <div class="story-marketing-card-image"><img src="./images/marketing-card.png" alt="Hanoi Fiesta Grand Hotel and Spa" width="80" height="80"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Hanoi Fiesta Grand Hotel and Spa Hanoi Fiesta Grand Hotel and Spa</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $90.00 / night</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Other hotels in this location" class="story-marketing-card --other-hotels">
+                                                        <div class="story-marketing-card-image"><img src="./images/icons/hotel-color.svg" alt="Hotel" width="24" height="24"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Other hotels in this location</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $80.00 / night</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Flight from Hanoi to Manila" class="story-marketing-card --flight">
+                                                        <div class="story-marketing-card-image"><img src="./images/marketing-card.png" alt="Flight from Hanoi to Manila" width="80" height="80"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Flight from Hanoi to Manila</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $190.00 / person</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Other flights" class="story-marketing-card --other-flights">
+                                                        <div class="story-marketing-card-image"><img src="./images/icons/flight-color.svg" alt="Flight" width="24" height="24"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Other flights</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $40.00 / person</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Ninh Binh Day Trip: Hoa Lu-Tran" class="story-marketing-card --activity">
+                                                        <div class="story-marketing-card-image"><img src="./images/marketing-card.png" alt="Ninh Binh Day Trip: Hoa Lu-Tran" width="80" height="80"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Ninh Binh Day Trip: Hoa Lu-Tran</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $90.00 / person</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#" target="_self" title="Other activities in this location" class="story-marketing-card --other-activities">
+                                                        <div class="story-marketing-card-image"><img src="./images/icons/ferris-wheel-color.svg" alt="Activities" width="24" height="24"></div>
+                                                        <div class="story-marketing-card-content">
+                                                        <span class="body-2-strong line-clamp-1">Other activities in this location</span>
+                                                        <span class="caption-1 line-clamp-1">Starts from $40.00 / night</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end .story-marketing-cards -->
+
+                                </div>
+                                <!-- end .story-detail-container -->
+                            </div>
+                            <div class="story-button-next"></div>
+                            <div class="story-button-prev"></div>
+                        </div>
+                        <!-- end .story-slide -->
+
+                        <div class="swiper-slide story-slide story-slide-fake"></div>
+                    </div>
+                    <div class="story-pagination"></div>
+                </div>
+                <!-- end .story-swiper -->
+
+                <!-- Itinerary page -->
+                <div id="storyItineraryPage" class="story-itinerary-page-wrapper" data-is-active="false"><!-- Automatic inject HTML here --></div>
+                <div id="storyItineraryPageTitle" class="hidden">
+                    <div class="story-itinerary-page-title">My itinerary</div>
+                </div>
+                <div id="storyItineraryPageCloseButton" class="hidden">
+                    <div class="story-itinerary-page-close">X</div>
+                </div>
+                <div id="storyItineraryPageContent" class="hidden">
+                    <div class="story-itinerary-page-content-inner">
+                        <p>By AMP Tutorials</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi sunt laboriosam esse ducimus ut dolor neque ipsum perspiciatis animi, doloribus minus autem soluta, incidunt deleniti impedit omnis. Illum, debitis.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur dicta esse veniam minus reiciendis sit est? Facere dolorum dolorem, beatae earum ipsum, delectus nam praesentium officia ea incidunt aperiam exercitationem?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia delectus molestias sequi odit velit eius natus incidunt dolorum, nam, quo totam eos facere assumenda. Aspernatur unde excepturi commodi est ducimus?</p>
+                        <h2>Section 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus consectetur accusantium perspiciatis ipsum, culpa itaque nam aut? Dolorem sequi voluptatum sapiente, inventore voluptatem porro consequatur, animi fugiat consectetur aut ratione!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, harum autem debitis mollitia deserunt explicabo aut nihil tempora natus pariatur vero. Labore mollitia, sint natus animi sunt quae nemo voluptas?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid officia quas doloremque impedit maiores ea dolorem, necessitatibus voluptas eligendi quibusdam non magni, sint error quisquam cupiditate. Ea nesciunt voluptatem doloremque?</p>
+                        <h2>Section 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi sunt laboriosam esse ducimus ut dolor neque ipsum perspiciatis animi, doloribus minus autem soluta, incidunt deleniti impedit omnis. Illum, debitis.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur dicta esse veniam minus reiciendis sit est? Facere dolorum dolorem, beatae earum ipsum, delectus nam praesentium officia ea incidunt aperiam exercitationem?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia delectus molestias sequi odit velit eius natus incidunt dolorum, nam, quo totam eos facere assumenda. Aspernatur unde excepturi commodi est ducimus?</p>
+                        <h2>Section 4</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus consectetur accusantium perspiciatis ipsum, culpa itaque nam aut? Dolorem sequi voluptatum sapiente, inventore voluptatem porro consequatur, animi fugiat consectetur aut ratione!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, harum autem debitis mollitia deserunt explicabo aut nihil tempora natus pariatur vero. Labore mollitia, sint natus animi sunt quae nemo voluptas?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid officia quas doloremque impedit maiores ea dolorem, necessitatibus voluptas eligendi quibusdam non magni, sint error quisquam cupiditate. Ea nesciunt voluptatem doloremque?</p>
+                    </div>
+                </div>
+                <!-- end Itinerary page -->
+            </div>
+            <!-- end .story-page-container -->
+        </div>
+        <!-- end .story-page -->
+
+        <div id="measureVh" style="position: fixed; height: 100vh; opacity: 0; z-index: -1;"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@frontle/bottomsheet@1.0.3/dist/frontle_bottomsheet.min.js"></script>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+.story-itinerary-page-wrapper {
+    position: absolute;
+    z-index: 3; /* layout level */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.story-itinerary-page-wrapper[data-is-active="false"] {
+    display: none;
+}
+
+.story-itinerary-page-content,
+.story-itinerary-page-title {
+    background-color: #433a3a;
+}
+
+.story-itinerary-page-content {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 72px 0 0 0; /* 12px from .frontleBottomSheetBar 60px for title */
+}
+
+.story-itinerary-page-content-inner {
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.story-itinerary-page-title {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    padding: 16px 12px;
+    line-height: 28px;
+    text-align: center;
+    border-bottom: #ccc 1px solid;
+    z-index: 1;
+}
+
+.story-itinerary-page-title h1 {
+    margin: 0;
+}
+
+.story-itinerary-page-close {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 38px;
+    z-index: 3;
+}
+
+/* Override lib */
+.story-itinerary-page-overlay {
+    opacity: 0 !important;
+}
+
+.story-itinerary-page-sheet.frontleBottomSheet {
+    position: absolute; /* override from fixed */
+}
+
+.story-itinerary-page-content .frontleBottomSheetBar {
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.story-itinerary-page-content .frontleBottomSheetBarLine {
+    height: 5px;
+    margin-top: 7px;
+}
+
+.story-itinerary-page-content .frontleBottomSheetHtml {
+    height: 100%;
+}
